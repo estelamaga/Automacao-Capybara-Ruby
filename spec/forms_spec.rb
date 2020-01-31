@@ -10,8 +10,13 @@ describe "Forms" do
     #Clicando no botão Login
     click_button "Login"
 
-    #Verificar se a mensagem de login com sucesso é exibida,buscando um elemento.
+    #Verificando se o elemento existe..
     expect(find("#flash").visible?).to be true
+
+    #Verificar a mensagem de sucesso
+    # O eql compara se realmente é idêntico
+    # to have_conten verifica se a string contém diretamente no elemento.
+    expect(find("#flash")).to have_content "Olá, Tony Stark. Você acessou a área logada!"
   end
 end
 
