@@ -1,4 +1,4 @@
-describe "controle dinâmico", :dc do
+describe "controle dinamico", :dc do
   before(:each) do
     visit "https://training-wheels-protocol.herokuapp.com/dynamic_controls"
   end
@@ -18,6 +18,6 @@ describe "controle dinâmico", :dc do
   end
 end
 
-#Observaç?es
+#Observaçoes
 #Perguntando se existe um identificador com o campo movie
 # O ponto de ? traz um valor TRUE ou FALSE
